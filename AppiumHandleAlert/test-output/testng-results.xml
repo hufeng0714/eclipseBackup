@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50592" started-at="2016-09-07T08:00:22Z" finished-at="2016-09-07T08:01:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50592" started-at="2016-09-07T08:00:22Z" finished-at="2016-09-07T08:01:13Z">
+      <class name="com.young.appiumdemo.AppiumHandleAlertTest">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.young.appiumdemo.AppiumHandleAlertTest@18c924b]" name="startTest" is-config="true" duration-ms="31564" started-at="2016-09-07T16:00:22Z" finished-at="2016-09-07T16:00:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="handleAlert()[pri:0, instance:com.young.appiumdemo.AppiumHandleAlertTest@18c924b]" name="handleAlert" duration-ms="14893" started-at="2016-09-07T16:00:54Z" finished-at="2016-09-07T16:01:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleAlert -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.young.appiumdemo.AppiumHandleAlertTest@18c924b]" name="afterClass" is-config="true" duration-ms="4123" started-at="2016-09-07T16:01:09Z" finished-at="2016-09-07T16:01:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.young.appiumdemo.AppiumHandleAlertTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

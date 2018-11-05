@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">8,060</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.young.appiumdemo.AppiumTest</td><td><a href="#m0">startTest</a></td><td rowspan="1">1533117210792</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.young.appiumdemo.AppiumTest</td><td><a href="#m1">afterClass</a></td><td rowspan="1">1533117218843</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.young.appiumdemo.AppiumTest</td><td><a href="#m2">addContract</a></td><td rowspan="1">1533117218838</td><td rowspan="1">2</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">com.young.appiumdemo.AppiumTest#startTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Command failed: C:\Windows\system32\cmd.exe /s /c &quot;D:\Dev\ADT\sdk\platform-tools\adb.exe -s 6&amp;343295d3&amp;0&amp;0002 wait-for-device&quot;
+Android Debug Bridge version 1.0.32
+
+ -a                            - directs adb to listen on all interfaces for a connection
+ -d                            - directs command to the only connected USB device
+                                 returns an error if more than one USB device is present.
+ -e                            - directs command to the only running emulator.
+                                 returns an error if more than one emulator is running.
+ -s &lt;specific device&gt;          - directs command to the device or emulator with the given
+                                 serial number or qualifier. Overrides ANDROID_SERIAL
+                                 environment variable.
+ -p &lt;product name or path&gt;     - simple product name like &apos;sooner&apos;, or
+                                 a relative/absolute path to a product
+                                 out directory like &apos;out/target/product/sooner&apos;.
+                                 If -p is not specified, the ANDROID_PRODUCT_OUT
+                                 environment variable is used, which must
+                                 be an absolute path.
+ -H                            - Name of adb server host (default: localhost)
+ -P                            - Port of adb server (default: 5037)
+ devices [-l]                  - list all connected devices
+                                 (&apos;-l&apos; will also list device qualifiers)
+ connect &lt;host&gt;[:&lt;port&gt;]       - connect to a device via TCP/IP
+                                 Port 5555 is used by default if no port number is specified.
+ disconnect [&lt;host&gt;[:&lt;port&gt;]]  - disconnect from a TCP/IP device.
+                                 Port 5555 is used by default if no port number is specified.
+                                 Using this command with no additional arguments
+                                 will disconnect from all connected TCP/IP devices.
+
+device commands:
+  adb push [-p] &lt;local&gt; &lt;remote&gt;
+                               - copy file/dir to device
+                                 (&apos;-p&apos; to display the transfer progress)
+  adb pull [-p] [-a] &lt;remote&gt; [&lt;local&gt;]
+                               - copy file/dir from device
+                                 (&apos;-p&apos; to display the transfer progress)
+                                 (&apos;-a&apos; means copy timestamp and mode)
+  adb sync [ &lt;directory&gt; ]     - copy host-&gt;device only if changed
+                                 (-l means list but don&apos;t copy)
+                                 (see &apos;adb help all&apos;)
+  adb shell                    - run remote shell interactively
+  adb shell &lt;command&gt;          - run remote shell command
+  adb emu &lt;command&gt;            - run emulator console command
+  adb logcat [ &lt;filter-spec&gt; ] - View device log
+  adb forward --list           - list all forward socket connections.
+                                 the format is a list of lines with the following format:
+                                    &lt;serial&gt; &quot; &quot; &lt;local&gt; &quot; &quot; &lt;remote&gt; &quot;\n&quot;
+  adb forward &lt;local&gt; &lt;remote&gt; - forward socket connections
+                                 forward specs are one of: 
+                                   tcp:&lt;port&gt;
+                                   localabstract:&lt;unix domain socket name&gt;
+                                   localreserved:&lt;unix domain socket name&gt;
+                                   localfilesystem:&lt;unix domain socket name&gt;
+                                   dev:&lt;character device name&gt;
+                                   jdwp:&lt;process pid&gt; (remote only)
+  adb forward --no-rebind &lt;local&gt; &lt;remote&gt;
+                               - same as &apos;adb forward &lt;local&gt; &lt;remote&gt;&apos; but fails
+                                 if &lt;local&gt; is already forwarded
+  adb forward --remove &lt;local&gt; - remove a specific forward socket connection
+  adb forward --remove-all     - remove all forward socket connections
+  adb reverse --list           - list all reverse socket connections from device
+  adb reverse &lt;remote&gt; &lt;local&gt; - reverse socket connections
+                                 reverse specs are one of:
+                                   tcp:&lt;port&gt;
+                                   localabstract:&lt;unix domain socket name&gt;
+                                   localreserved:&lt;unix domain socket name&gt;
+                                   localfilesystem:&lt;unix domain socket name&gt;
+  adb reverse --norebind &lt;remote&gt; &lt;local&gt;
+                               - same as &apos;adb reverse &lt;remote&gt; &lt;local&gt;&apos; but fails
+                                 if &lt;remote&gt; is already reversed.
+  adb reverse --remove &lt;remote&gt;
+                               - remove a specific reversed socket connection
+  adb reverse --remove-all     - remove all reversed socket connections from device
+  adb jdwp                     - list PIDs of processes hosting a JDWP transport
+  adb install [-lrtsd] &lt;file&gt;
+  adb install-multiple [-lrtsdp] &lt;file...&gt;
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-p: partial application install)
+  adb uninstall [-k] &lt;package&gt; - remove this app package from the device
+                                 (&apos;-k&apos; means keep the data and cache directories)
+  adb bugreport                - return all information from the device
+                                 that should be included in a bug report.
+
+  adb backup [-f &lt;file&gt;] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [&lt;packages...&gt;]
+                               - write an archive of the device&apos;s data to &lt;file&gt;.
+                                 If no -f option is supplied then the data is written
+                                 to &quot;backup.ab&quot; in the current directory.
+                                 (-apk|-noapk enable/disable backup of the .apks themselves
+                                    in the archive; the default is noapk.)
+                                 (-obb|-noobb enable/disable backup of any installed apk expansion
+                                    (aka .obb) files associated with each application; the default
+                                    is noobb.)
+                                 (-shared|-noshared enable/disable backup of the device&apos;s
+                                    shared storage / SD card contents; the default is noshared.)
+                                 (-all means to back up all installed applications)
+                                 (-system|-nosystem toggles whether -all automatically includes
+                                    system applications; the default is to include system apps)
+                                 (&lt;packages...&gt; is the list of applications to be backed up.  If
+                                    the -all or -shared flags are passed, then the package
+                                    list is optional.  Applications explicitly given on the
+                                    command line will be included even if -nosystem would
+                                    ordinarily cause them to be omitted.)
+
+  adb restore &lt;file&gt;           - restore device contents from the &lt;file&gt; backup archive
+
+  adb disable-verity           - disable dm-verity checking on USERDEBUG builds
+  adb keygen &lt;file&gt;            - generate adb public/private key. The private key is stored in &lt;file&gt;,
+                                 and the public key is stored in &lt;file&gt;.pub. Any existing files
+                                 are overwritten.
+  adb help                     - show this help message
+  adb version                  - show version num
+
+scripting:
+  adb wait-for-device          - block until device is online
+  adb start-server             - ensure that there is a server running
+  adb kill-server              - kill the server if it is running
+  adb get-state                - prints: offline | bootloader | device
+  adb get-serialno             - prints: &lt;serial-number&gt;
+  adb get-devpath              - prints: &lt;device-path&gt;
+  adb status-window            - continuously print device status for a specified device
+  adb remount                  - remounts the /system and /vendor (if present) partitions on the device read-write
+  adb reboot [bootloader|recovery] - reboots the device, optionally into the bootloader or recovery program
+  adb reboot-bootloader        - reboots the device into the bootloader
+  adb root                     - restarts the adbd daemon with root permissions
+  adb usb                      - restarts the adbd daemon listening on USB
+  adb tcpip &lt;port&gt;             - restarts the adbd daemon listening on TCP on the specified port
+networking:
+  adb ppp &lt;tty&gt; [parameters]   - Run PPP over USB.
+ Note: you should not automatically start a PPP connection.
+ &lt;tty&gt; refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1
+ [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+
+adb sync notes: adb sync [ &lt;directory&gt; ]
+  &lt;localdir&gt; can be interpreted in several ways:
+
+  - If &lt;directory&gt; is not specified, /system, /vendor (if present), and /data partitions will be updated.
+
+  - If it is &quot;system&quot;, &quot;vendor&quot; or &quot;data&quot;, only the corresponding partition
+    is updated.
+
+environmental variables:
+  ADB_TRACE                    - Print debug information. A comma separated list of the following values
+                                 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+  ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
+  ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
+&apos;343295d3&apos; ????????????????????????§Ö????
+?????????????
+&apos;0&apos; ????????????????????????§Ö????
+?????????????
+&apos;0002&apos; ????????????????????????§Ö????
+?????????????
+) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7.72 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;shpc-021&apos;, ip: &apos;10.0.1.17&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:39)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:69)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:78)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:67)
+	at com.young.appiumdemo.AppiumTest.startTest(AppiumTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.young.appiumdemo.AppiumTest#afterClass</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.young.appiumdemo.AppiumTest#addContract</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

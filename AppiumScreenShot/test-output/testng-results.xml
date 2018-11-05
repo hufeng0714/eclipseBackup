@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37673" started-at="2016-09-07T08:14:47Z" finished-at="2016-09-07T08:15:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37673" started-at="2016-09-07T08:14:47Z" finished-at="2016-09-07T08:15:24Z">
+      <class name="com.young.appiumdemo.AppiumScreenShotTest">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.young.appiumdemo.AppiumScreenShotTest@5c5f7f06]" name="startTest" is-config="true" duration-ms="31688" started-at="2016-09-07T16:14:47Z" finished-at="2016-09-07T16:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="screenshot()[pri:0, instance:com.young.appiumdemo.AppiumScreenShotTest@5c5f7f06]" name="screenshot" duration-ms="1902" started-at="2016-09-07T16:15:19Z" finished-at="2016-09-07T16:15:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.young.appiumdemo.AppiumScreenShotTest@5c5f7f06]" name="afterClass" is-config="true" duration-ms="4072" started-at="2016-09-07T16:15:20Z" finished-at="2016-09-07T16:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.young.appiumdemo.AppiumScreenShotTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

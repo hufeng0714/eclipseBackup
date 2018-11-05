@@ -1,0 +1,27 @@
+[2016-08-29 15:52:55] [INFO] 必应搜索APP已经启动
+[2016-08-29 15:52:55] [INFO] searchDemo 测试用例开始执行！
+[2016-08-29 15:53:15] [INFO] 点击元素： id: com.microsoft.bing:id/tutorial_finish_button
+[2016-08-29 15:53:22] [INFO] 点击元素： id: android:id/button2
+[2016-08-29 15:53:27] [INFO] 点击元素： id: com.microsoft.bing:id/search
+[2016-08-29 15:53:41] [INFO] 在元素： id: com.microsoft.bing:id/search_text_field输入内容：Java
+[2016-08-29 15:53:43] [INFO] 点击元素： id: com.microsoft.bing:id/opal_as_web
+[2016-08-29 15:54:03] [INFO] 开始查找元素[By.xpath: //*[@class='b_hList']/li[2]]
+[2016-08-29 15:54:27] [INFO] 找到了元素 [By.xpath: //*[@class='b_hList']/li[2]]
+[2016-08-29 15:54:27] [INFO] 开始查找元素[By.xpath: //*[@class='b_hList']/li[4]]
+[2016-08-29 15:54:39] [INFO] 找到了元素 [By.xpath: //*[@class='b_hList']/li[4]]
+[2016-08-29 15:54:39] [INFO] 开始查找元素[By.xpath: //*[@class='deeplink_title']]
+[2016-08-29 15:54:42] [INFO] 找到了元素 [By.xpath: //*[@class='deeplink_title']]
+[2016-08-29 15:54:44] [ERROR] The [下载] is not contains [Java]
+[2016-08-29 15:54:44] [WARN] searchDemo 测试用例执行失败！
+[2016-08-29 15:54:44] [ERROR] [SearchPage_001_SearchDemo_Test] ,截图失败，原因：unknown error: unhandled inspector error: {"code":-32603,"message":"Unable to capture screenshot"}
+  (Session info: webview=30.0.0.0)
+  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 133 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC-20160506OGFT', ip: '10.0.1.16', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: db885d98-f256-4e9c-893a-713f9259efb8
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=Appium, platform=LINUX, app=D:\EcliWorkSpace\appiumcombat\res\app\android\bing.apk, javascriptEnabled=true, appActivity=com.microsoft.clients.bing.app.MainActivity, browserName=Android, networkConnectionEnabled=true, sessionOverride=true, desired={automationName=Appium, app=D:\EcliWorkSpace\appiumcombat\res\app\android\bing.apk, platformVersion=4.4.2, deviceName=appium-test-avd, platformName=Android, appActivity=com.microsoft.clients.bing.app.MainActivity, unicodeKeyboard=true, sessionOverride=true, resetKeyboard=true, appPackage=com.microsoft.bing}, locationContextEnabled=false, appPackage=com.microsoft.bing, platformVersion=4.4.2, databaseEnabled=false, deviceName=emulator-5554, platformName=Android, webStorageEnabled=false, unicodeKeyboard=true, resetKeyboard=true, warnings={}, takesScreenshot=true}]
+[2016-08-29 15:54:54] [INFO] 必应搜索APP已经关闭
+[2016-08-29 15:54:54] [INFO] 执行失败的用例 = searchDemo
+[2016-08-29 15:54:55] [INFO] Excel报告已经生成，请查看：[D:\EcliWorkSpace\appiumcombat\test-output\excelReports\TestReport_2016-08-29_15-54-appium实战-Android篇.xlsx]
